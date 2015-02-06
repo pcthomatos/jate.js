@@ -1,7 +1,7 @@
 /** @author pcthomatos
   * @license: MIT
  **/
-var jate = (function(){
+var jte = (function(){
 	var _compiledStr			= undefined,
 		_chainable				= false,
 		_openCloseDelimiters 	= ['\\{\\{', '}}'],
@@ -60,7 +60,7 @@ var jate = (function(){
 									(!collection.length || collection.length && typeof collection[0] === 'object') &&
 									(typeof tempalteStr === 'string' || _compiledStr !== undefined)?
 											_process(collection, tempalteStr)
-												: 'Error: Invalid jate.jquery.js params. Expecting Object or Array of Objects.';
+												: 'Error: Invalid jte.jquery.js params. Expecting Object or Array of Objects.';
 
 			return  _chainable? this : _compiledStr;
 		},
